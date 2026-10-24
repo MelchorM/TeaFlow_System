@@ -1,0 +1,389 @@
+[
+    {
+        "reference_id": 1,
+        "name": "Taro",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/2022d76b-e69d-4df7-a2c7-461733f743a3_655f040e.jpg"
+    },
+    {
+        "reference_id": 2,
+        "name": "Strawberry",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/194c7c01-c132-41dd-81ae-1570c0cdb67a_044f75c3.jpg"
+    },
+    {
+        "reference_id": 3,
+        "name": "Cheesecake",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/aea4e231-73d8-4436-b8d6-55fce079ced7-removebg-preview_be6c8b9d.png"
+    },
+    {
+        "reference_id": 4,
+        "name": "Cookies and Cream",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/d580bbb3-69ed-4d8b-9743-1951449501d5_4cf331ba.jpg"
+    },
+    {
+        "reference_id": 5,
+        "name": "Java Chips",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/6719df71-9faa-421d-ae8b-41eb8654ab79_c71e7bf7.jpg"
+    },
+    {
+        "reference_id": 6,
+        "name": "Chocolate",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/3325bfe8-5c30-4ed6-a0b8-60cb977278fe_df42f889.jpg"
+    },
+    {
+        "reference_id": 7,
+        "name": "Double Dutch",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/4b955279-1c7d-4b9c-9228-faf384b14911_b15bce36.jpg"
+    },
+    {
+        "reference_id": 8,
+        "name": "Choco Nutella",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/bc778818-5671-4244-8b39-1a0e5e2e2b63_085c03c9.jpg"
+    },
+    {
+        "reference_id": 9,
+        "name": "Triple Choco",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/9eac1d0e-3b7e-4d15-87da-31fc31da35c7_1d9559e7.jpg"
+    },
+    {
+        "reference_id": 10,
+        "name": "Avocado",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/e57668f5-b487-431d-aac6-3603dfbda534_fa89bf98.jpg"
+    },
+    {
+        "reference_id": 11,
+        "name": "Mocha",
+        "category": "Milkshake Coffee Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/690950651_950321930954483_7580847485942437922_n_d29d9578.jpg"
+    },
+    {
+        "reference_id": 12,
+        "name": "Cappuccino",
+        "category": "Milkshake Coffee Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/686009709_1505659127898737_1223569342554999227_n_4448bee3.jpg"
+    },
+    {
+        "reference_id": 13,
+        "name": "Caramel Macchiato",
+        "category": "Milkshake Coffee Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/684400645_1696007901446525_8036324883481442002_n_9662b5b9.jpg"
+    },
+    {
+        "reference_id": 14,
+        "name": "Dark Chocolate",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/54765772-4557-4bad-b536-4a9bb4ac3c2e_1214a76b.jpg"
+    },
+    {
+        "reference_id": 15,
+        "name": "Chocolate",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/c88fb4f0-3f91-4eb2-bc5a-32cc28118017_84df4092.jpg"
+    },
+    {
+        "reference_id": 16,
+        "name": "Choco Nutella",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/bc6c2110-80b5-4278-97bf-e052ec992f67_d34ce1cf.jpg"
+    },
+    {
+        "reference_id": 17,
+        "name": "Cheesecake",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/d6c721cb-79de-459c-a181-a56f5571ebd1_76b87b36.jpg"
+    },
+    {
+        "reference_id": 18,
+        "name": "Cookies and Cream",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/d207b06c-0cf8-47de-9912-54794cb57b47_f30eb3eb.jpg"
+    },
+    {
+        "reference_id": 19,
+        "name": "Matcha",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/b5955471-0668-4efc-a83f-b3c4ef4ae19e_12ef9174.jpg"
+    },
+    {
+        "reference_id": 20,
+        "name": "Strawberry",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/5b0d8730-5700-49c7-b620-81cde3a9b42d_c4b0b3e5.jpg"
+    },
+    {
+        "reference_id": 21,
+        "name": "Taro",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/77a8a5f4-98c6-4d60-a44b-696cd7bf68ec_d7d324c7.jpg"
+    },
+    {
+        "reference_id": 22,
+        "name": "Double Dutch",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/685966138_969766779140003_8246685462897296563_n_395b55e5.jpg"
+    },
+    {
+        "reference_id": 23,
+        "name": "Wintermelon",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/81f715ce-65d6-431e-84d0-44240d7da476_bd031e58.jpg"
+    },
+    {
+        "reference_id": 24,
+        "name": "Okinawa",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/d193925e-2969-402c-9fda-b2136793f10e_3f2be535.jpg"
+    },
+    {
+        "reference_id": 25,
+        "name": "Red Velvet",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/c31e2efa-2f64-43e6-8b7f-1874c88379c8_8f16f669.jpg"
+    },
+    {
+        "reference_id": 26,
+        "name": "Java Chips",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/687065438_1488960449376641_6478317637308134938_n_b222c80a.jpg"
+    },
+    {
+        "reference_id": 27,
+        "name": "Salted Caramel",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/686920876_851837120621947_8255620408126127466_n_e7482dd9.jpg"
+    },
+    {
+        "reference_id": 29,
+        "name": "Black Forest",
+        "category": "Milktea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/2cab8f29-7a33-4219-9c7e-e6ddabfaa7d8_8d5728e9.jpg"
+    },
+    {
+        "reference_id": 30,
+        "name": "Lemon",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/2cb60992-99f3-4486-b3f4-a9f690f8c9da_e5f9dabc.jpg"
+    },
+    {
+        "reference_id": 31,
+        "name": "Mango",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/688607712_1495546958598201_2939607171582053167_n_e2407f52.jpg"
+    },
+    {
+        "reference_id": 32,
+        "name": "Lychee",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/dbe3dfba-f994-402f-968d-965391698e36_93cc7bd5.jpg"
+    },
+    {
+        "reference_id": 35,
+        "name": "Green Apple",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/686950103_35408753088771603_1916905608974328173_n_4259127d.jpg"
+    },
+    {
+        "reference_id": 36,
+        "name": "Blueberry",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/685704677_1454423125884206_2912635038212747783_n_8ffe0616.jpg"
+    },
+    {
+        "reference_id": 38,
+        "name": "Kape Vanilla",
+        "category": "Iced Coffee",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/f6044dd6-2a48-4189-8872-8d14bb8c0f80-removebg-preview_fce702dd.png"
+    },
+    {
+        "reference_id": 39,
+        "name": "Kape Mocha",
+        "category": "Iced Coffee",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/687793083_982482840844358_2430219395460562665_n_6740a24e.jpg"
+    },
+    {
+        "reference_id": 40,
+        "name": "Kape Macchiato",
+        "category": "Iced Coffee",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/693985124_1625481778736957_7377393187195534108_n_7f271788.jpg"
+    },
+    {
+        "reference_id": 42,
+        "name": "Kape Cappuccino",
+        "category": "Iced Coffee",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/e6e03000-aa41-4f57-8180-384b3adc9521_2026e39f.jpg"
+    },
+    {
+        "reference_id": 43,
+        "name": "Kape Caramel",
+        "category": "Iced Coffee",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/afb8099e-f7dd-4ab8-8959-f817d7416dac__1_c967d2be.jpg"
+    },
+    {
+        "reference_id": 46,
+        "name": "Mango",
+        "category": "Milkshake Cream Base",
+        "small_cents": 4900,
+        "large_cents": 5900,
+        "active": true,
+        "image": "images/menu/fb0ecd2b-af98-4f42-b908-39747c96b015_df88dc83.jpg"
+    },
+    {
+        "reference_id": 47,
+        "name": "Kape Matcha",
+        "category": "Iced Coffee",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/af4f0ed8-f44c-48c1-b778-90e93bbd8f81-removebg-preview_c8336fe6.png"
+    },
+    {
+        "reference_id": 48,
+        "name": "Kiwi",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/8958dcee-77ec-404c-95d4-ddb1e3bfa5b6_4b4850ca.jpg"
+    },
+    {
+        "reference_id": 49,
+        "name": "Strawberrry",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/687608710_1501771154912727_8945037987014465168_n_b026b4b9.jpg"
+    },
+    {
+        "reference_id": 50,
+        "name": "Honey Peach",
+        "category": "Fruit Tea",
+        "small_cents": 2900,
+        "large_cents": 3900,
+        "active": true,
+        "image": "images/menu/41631d31-6d69-4046-bb60-ca33d691a34e_7eea43f6.jpg"
+    }
+]

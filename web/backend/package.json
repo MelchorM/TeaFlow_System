@@ -1,0 +1,24 @@
+{
+  "name": "teaflow-bestbrew",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BESTBREW customer ordering and IoT integration based on the IT 314 and IoT proposals",
+  "scripts": {
+    "start": "node src/server.js",
+    "setup": "node scripts/setup.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "dotenv": "^17.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "mysql2": "^3.24.0"
+  },
+  "devDependencies": { "supertest": "^7.1.0" }
+}

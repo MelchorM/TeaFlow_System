@@ -1,0 +1,9 @@
+<%- include('partials/header', {title}) %>
+<div class="page-heading"><p class="eyebrow">YOUR BESTBREW MOMENT</p><h1>Thanks, <%= order.customer_name %>.</h1><p>Your order is <strong><%= order.code %></strong>. Keep this page open to follow its progress.</p><span class="sync-status" role="status">Checking for updates…</span></div>
+<section id="order-panel" data-poll="order-panel" class="panel tracking-panel">
+<div class="tracking-heading"><h2><%= order.code %></h2><%- include('partials/badge', {status:order.status}) %></div>
+<ol class="order-progress"><% const steps=['unpaid','queued','preparing','ready','completed']; steps.forEach((step,index)=> { %><li class="<%= steps.indexOf(order.status)>=index?'reached':'' %>"><span><%= index+1 %></span><%= ['Payment','Queued','Preparing','Ready','Collected'][index] %></li><% }); %></ol>
+<p class="status-message"><%= ({unpaid:'Please pay at the counter. Preparation starts after the cashier verifies payment.',queued:'Payment confirmed. Your drinks are in the kitchen queue.',preparing:'The barista is preparing your drinks.',ready:'Your drinks are ready! Show your order number at the counter.',completed:'Order collected. Enjoy your BESTBREW!'})[order.status] %></p>
+<%- include('partials/items', {order}) %><div class="total-row"><span>Total</span><strong><%= money(order.total_cents) %></strong></div>
+</section><a href="/" class="back-link">← Back to the menu</a>
+<%- include('partials/footer') %>

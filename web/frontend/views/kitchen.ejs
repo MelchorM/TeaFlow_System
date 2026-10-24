@@ -1,0 +1,9 @@
+<%- include('partials/header', {title}) %>
+<div class="page-heading heading-with-action"><div><p class="eyebrow">BARISTA WORKSPACE</p><h1>Kitchen queue</h1><p>Only orders with confirmed payment appear here.</p></div><button id="enable-sound" class="button secondary" type="button">Enable order sound</button></div>
+<div id="queue-panel" data-poll="queue-panel" data-event-id="<%= eventId %>">
+<% if(low.length) { %><div class="notice warning">Low stock: <%= low.map(i=>i.name).join(', ') %></div><% } %>
+<div class="order-grid kitchen-grid"><% if(!orders.length) { %><div class="empty-state"><h2>All caught up.</h2><p>Paid orders will appear here automatically.</p></div><% } %>
+<% for(const order of orders) { %><article class="panel order-card"><div class="order-card-heading"><h2><%= order.code %></h2><%- include('partials/badge',{status:order.status}) %></div><p class="order-person"><%= order.customer_name %></p><p class="muted">Paid <%= when(order.paid_at) %></p><%- include('partials/items',{order}) %>
+<% if(order.status==='queued'||order.status==='preparing') { %><form method="post" action="/staff/orders/<%= order.id %>/status"><input type="hidden" name="_csrf" value="<%= csrf %>"><input type="hidden" name="status" value="<%= order.status==='queued'?'preparing':'ready' %>"><button class="button full" type="submit"><%= order.status==='queued'?'Start preparing':'Mark ready' %></button></form><% } else { %><p class="ready-note">Waiting for customer handover</p><% } %>
+</article><% } %></div></div><p class="sync-status" role="status">Checking for updates…</p>
+<%- include('partials/footer') %>

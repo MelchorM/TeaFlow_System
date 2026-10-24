@@ -1,0 +1,36 @@
+<%- include('partials/header', {title}) %>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">YOUR NEIGHBORHOOD MILK TEA SHOP</p><h1>Your favorite cup.<br>A happier day.</h1><p>Milk tea, creamy shakes, fruity sips, and iced coffee. Pick your flavor and make it yours.</p><a class="button" href="#menu">Find your brew <span aria-hidden="true">↗</span></a><div class="hero-note"><span class="little-dot"></span> Order here. Pick up at BESTBREW.</div></div>
+  <div class="hero-art" aria-hidden="true"><div class="hero-orbit"></div><div class="hero-label">SIP SOMETHING<br>GOOD.</div>
+    <% const featured = products.find(p => p.name === 'Wintermelon' && p.image) || products.find(p => p.image); %>
+    <% if (featured) { %><img src="/<%= featured.image %>" alt="" class="hero-drink"><% } %>
+    <span class="hero-stamp">BREWED FOR<br>GOOD DAYS</span>
+  </div>
+</section>
+<section id="menu" class="menu-section">
+<div class="section-heading"><div><p class="eyebrow">WHAT ARE YOU CRAVING?</p><h2>Meet the menu</h2></div><label class="search-label"><span class="visually-hidden">Search drinks</span><input id="menu-search" type="search" placeholder="Search your favorite flavor…" class="form-control"></label></div>
+<div class="category-tabs" role="group" aria-label="Filter menu">
+  <button class="category-tab selected" data-category="all" type="button" aria-pressed="true">All drinks</button>
+  <% for (const category of [...new Set(products.map(p => p.category))]) { %><button class="category-tab" type="button" data-category="<%= category %>" aria-pressed="false"><%= category %></button><% } %>
+</div>
+<div class="product-grid">
+<% for (const product of products) { const available = product.variants.some(v => v.available); %>
+<article class="product-card" data-category="<%= product.category %>" data-search="<%= (product.name+' '+product.category).toLowerCase() %>">
+  <div class="product-photo"><% if (product.image) { %><img src="/<%= product.image %>" alt="<%= product.name %>" loading="lazy"><% } else { %><span class="photo-placeholder" aria-hidden="true">B</span><% } %><span class="photo-tag"><%= product.category %></span></div>
+  <div class="product-body"><div class="product-heading"><h3><%= product.name %></h3><span class="price"><%= money(Math.min(...product.variants.map(v=>v.price_cents))) %><small>from</small></span></div>
+  <% if (!available) { %><p class="unavailable">Temporarily unavailable</p><% } else { %>
+  <details class="customize"><summary>Make it yours <span aria-hidden="true">+</span></summary>
+    <form action="/cart/add" method="post" class="drink-form">
+      <input type="hidden" name="_csrf" value="<%= csrf %>">
+      <div class="field-pair"><label>Size<select name="variant_id" class="form-select"><% for(const variant of product.variants) { %><option value="<%= variant.id %>" data-price="<%= variant.price_cents %>" <%= !variant.available?'disabled':'' %>><%= variant.size %> · <%= money(variant.price_cents) %></option><% } %></select></label><label>Quantity<input name="quantity" type="number" min="1" max="20" value="1" class="form-control" required></label></div>
+      <div class="field-pair"><label>Sugar<select name="sugar" class="form-select"><% for(const level of [0,25,50,75,100]) { %><option value="<%= level %>" <%= level===100?'selected':'' %>><%= level %>%</option><% } %></select></label><label>Ice<select name="ice" class="form-select"><option value="regular">Regular</option><option value="light">Light</option><option value="none">No ice</option></select></label></div>
+      <fieldset class="topping-options"><legend>Toppings <span>optional</span></legend><% for(const addon of addons.filter(a=>a.active && a.in_stock)) { %><label><input type="checkbox" name="addon_ids" value="<%= addon.id %>" data-price="<%= addon.price_cents %>"><span><%= addon.name %></span><small>+<%= money(addon.price_cents) %></small></label><% } %></fieldset>
+      <button type="submit" class="button full">Add to cart <span class="drink-total"><%= money(product.variants.find(v=>v.available).price_cents) %></span></button>
+    </form>
+  </details><% } %>
+  </div>
+</article>
+<% } %>
+</div><p id="menu-empty" class="empty-message" hidden>No drinks match that search. Try another flavor.</p>
+</section>
+<%- include('partials/footer') %>

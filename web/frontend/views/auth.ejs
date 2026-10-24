@@ -1,0 +1,11 @@
+<%- include('partials/header', {title}) %>
+<section class="auth-layout"><div class="auth-copy"><p class="eyebrow">WELCOME TO BESTBREW</p><h1>A good day<br>starts with a sip.</h1><p>Save your order, follow its progress, and find your next favorite drink.</p></div>
+<div class="panel auth-panel"><h2><%= title %></h2><p class="muted"><%= mode==='register'?'Create your customer account to order online.':'Use your customer or staff account.' %></p>
+<form method="post" action="/<%= mode %>" class="stack-form"><input type="hidden" name="_csrf" value="<%= csrf %>">
+  <% if(mode==='register') { %><label>Your name<input class="form-control" name="name" maxlength="80" autocomplete="name" required></label><% } %>
+  <label>Email<input class="form-control" type="email" name="email" maxlength="190" autocomplete="username" required></label>
+  <label>Password<input class="form-control" type="password" name="password" minlength="8" maxlength="128" autocomplete="<%= mode==='register'?'new-password':'current-password' %>" required></label>
+  <% if(mode==='register') { %><label>Confirm password<input class="form-control" type="password" name="confirm_password" minlength="8" maxlength="128" autocomplete="new-password" required></label><% } %>
+  <button class="button full" type="submit"><%= mode==='register'?'Create account':'Sign in' %></button>
+</form><p class="auth-alternate"><%= mode==='register'?'Already have an account?':'New to BESTBREW?' %> <a href="/<%= mode==='register'?'login':'register' %>"><%= mode==='register'?'Sign in':'Create an account' %></a></p></div></section>
+<%- include('partials/footer') %>

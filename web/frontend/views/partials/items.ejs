@@ -1,0 +1,7 @@
+<ul class="order-items">
+<% for (const item of order.items) { %>
+  <li><strong><%= item.quantity %> × <%= item.product_name %></strong><span><%= item.size %> · <%= item.sugar %>% sugar · <%= item.ice %> ice</span>
+    <% if (item.addons.length) { %><span>+ <%= item.addons.map(a => a.name).join(', ') %></span><% } %>
+  </li>
+<% } %>
+</ul>

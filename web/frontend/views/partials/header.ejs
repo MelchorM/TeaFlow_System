@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="<%= csrf %>">
+  <title><%= title %> · BESTBREW</title>
+  <link rel="stylesheet" href="/vendor/bootstrap.css"><link rel="stylesheet" href="/assets/style.css">
+  <script src="/vendor/bootstrap.js" defer></script><script src="/assets/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><div class="shell topbar-inner">
+  <a class="brand" href="/"><span class="brand-mark">B</span><span>BESTBREW<span class="brand-small">A LITTLE JOY IN EVERY CUP</span></span></a>
+  <nav aria-label="Main navigation" class="main-nav">
+    <a href="/">Menu</a><a href="/cart" class="cart-link">Cart <span class="count"><%= cartCount %></span></a>
+    <% if (user) { %>
+      <% if (user.role === 'customer') { %><a href="/my-orders">My orders</a><% } else { %><a href="/staff">Staff workspace</a><% } %>
+      <form action="/logout" method="post"><input type="hidden" name="_csrf" value="<%= csrf %>"><button class="text-button" type="submit">Sign out</button></form>
+    <% } else { %><a href="/login" class="nav-pill">Sign in</a><% } %>
+  </nav>
+</div></header>
+<% if (user && user.role !== 'customer') { %>
+<nav class="staff-nav shell" aria-label="Staff navigation">
+  <% if (['admin','cashier'].includes(user.role)) { %><a href="/staff/orders">Orders</a><a href="/staff/inventory">Inventory</a><% } %>
+  <% if (['admin','kitchen'].includes(user.role)) { %><a href="/staff/kitchen">Kitchen queue</a><% } %>
+  <% if (user.role === 'admin') { %><a href="/staff/products">Products & recipes</a><% } %>
+  <span class="staff-identity"><%= user.name %> · <%= user.role %></span>
+</nav>
+<% } %>
+<main class="shell">
+<% if (flash) { %><div class="notice <%= flash.type %>" role="status"><%= flash.message %></div><% } %>
